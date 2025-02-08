@@ -13,6 +13,8 @@ import 'package:domus/src/screens/home_screen/home_screen.dart';
 import 'package:domus/src/screens/my_list_screen/my_list_screen.dart';
 import 'package:domus/src/screens/savings_screen/savings_screen.dart';
 import 'package:domus/src/screens/smart_tv/smart_tv.dart';
+import 'package:domus/src/screens/llm_screen/body.dart';
+import 'package:domus/src/add_remove/DeviceManagementPage.dart';
 
 // Routes arranged in ascending order
 
@@ -30,5 +32,7 @@ final Map<String, WidgetBuilder> routes = {
   SmartSpeaker.routeName: (context) => const SmartSpeaker(),
   SplashScreen.routeName: (context) => const SplashScreen(),
   StatsScreen.routeName: (context) => const StatsScreen(),
-  MyListScreen.routeName: (context) => const MyListScreen()
+  MyListScreen.routeName: (context) => const MyListScreen(),
+  LLMAnalysisScreen.routeName: (context) => LLMAnalysisScreen(),
+  DeviceManagementScreen.routeName: (context) => DeviceManagementScreen()
 };

@@ -28,6 +28,7 @@ dependencies:
   table_calendar: ^3.0.4
 
   path: any
+  google_generative_ai: ^0.4.6
 dev_dependencies:
   flutter_lints: ^2.0.1
 

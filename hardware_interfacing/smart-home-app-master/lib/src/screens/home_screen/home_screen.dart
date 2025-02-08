@@ -40,6 +40,7 @@ class HomeScreen extends StatelessWidget {
                     children: [
                       Text(
                         'Hi, Lex',
+                        
                         style: Theme.of(context).textTheme.displayLarge,
                       ),
                       SizedBox(
@@ -155,3 +156,5 @@ class HomeScreen extends StatelessWidget {
         });
   }
 }
+
+

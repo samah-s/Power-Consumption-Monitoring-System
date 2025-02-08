@@ -3,6 +3,8 @@ import 'package:domus/src/screens/stats_screen/stats_screen.dart';
 import 'package:domus/src/screens/savings_screen/savings_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:domus/config/size_config.dart';
+import 'package:domus/src/screens/llm_screen/body.dart';
+import 'package:domus/src/add_remove/DeviceManagementPage.dart';
 
 class MenuList extends StatelessWidget {
   const MenuList({Key? key}) : super(key: key);
@@ -25,7 +27,7 @@ class MenuList extends StatelessWidget {
         MenuListItems(
           iconPath: 'assets/icons/menu_icons/devices.svg',
           itemName: 'Devices',
-          function: () {},
+          function: () => Navigator.pushNamed(context, DeviceManagementScreen.routeName),
         ),
         SizedBox(
           height: getProportionateScreenHeight(10),
@@ -42,8 +44,8 @@ class MenuList extends StatelessWidget {
         ),
         MenuListItems(
           iconPath: 'assets/icons/menu_icons/settings.svg',
-          itemName: 'Settings',
-          function: () {},
+          itemName: 'Data Analytics',
+          function: () => Navigator.of(context).pushNamed(LLMAnalysisScreen.routeName),
         ),
         SizedBox(
           height: getProportionateScreenHeight(10),
